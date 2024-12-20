@@ -82,7 +82,7 @@ const AuthPage = () => {
 
 
             <div className="text-center">
-              <a href="#" className="text-sm text-blue-600 hover:text-blue-800 transition-colors duration-300">
+              <a href="mailto:hridayahoney@gmail.com" className="text-sm text-blue-600 hover:text-blue-800 transition-colors duration-300">
                 Contact support
               </a>
             </div>

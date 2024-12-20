@@ -22,7 +22,7 @@ const AuthPage = () => {
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: ` `,
+          redirectTo: `https://moody-nu.vercel.app/dashboard`,
           queryParams: {
             access_type: 'offline',
             prompt: 'consent',

@@ -75,4 +75,6 @@ npm install
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+4. [Setup google project](https://console.cloud.google.com/apis/credentials) in supabase 
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser

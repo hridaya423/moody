@@ -22,7 +22,7 @@ const AuthPage = () => {
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `${window.location.origin}/dashboard`,
+          redirectTo: `https://moody-nu.vercel.app/dashboard`,
           queryParams: {
             access_type: 'offline',
             prompt: 'consent',
@@ -47,7 +47,7 @@ const AuthPage = () => {
       </div>
 
       <div className="relative z-10 max-w-md w-full mx-4">
-        {/* Logo section */}
+      
         <div className="mb-8 text-center">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white shadow-md mb-4">
             <Chrome className="w-8 h-8 text-blue-500" />
@@ -56,7 +56,6 @@ const AuthPage = () => {
           <p className="mt-2 text-gray-600">Please sign in to continue to the dashboard</p>
         </div>
 
-        {/* Auth card */}
         <div className="bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl p-8 transition-all duration-300 hover:shadow-2xl">
           <div className="space-y-6">
             <button
@@ -75,7 +74,6 @@ const AuthPage = () => {
               </span>
             </button>
 
-            {/* Divider */}
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
                 <div className="w-full border-t border-gray-200"></div>
@@ -85,16 +83,13 @@ const AuthPage = () => {
               </div>
             </div>
 
-            {/* Additional options */}
             <div className="text-center">
               <a href="#" className="text-sm text-blue-600 hover:text-blue-800 transition-colors duration-300">
                 Contact support
               </a>
             </div>
           </div>
-        </div>
 
-        {/* Footer */}
         <div className="mt-8 text-center text-sm text-gray-600">
           <p>By continuing, you agree to our</p>
           <div className="mt-2 space-x-3">

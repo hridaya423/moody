@@ -2,7 +2,7 @@
 
 Moody is a full-stack web application that helps users track and analyze their emotional well-being. Built with Next.js, Supabase, and OpenAI, it provides an intuitive interface for mood tracking and AI-powered insights.
 
-![Moody Dashboard](/api/placeholder/800/400)
+![Moody Landing Page](https://cloud-qezh34qvk-hack-club-bot.vercel.app/0image.png)
 
 ## Features
 

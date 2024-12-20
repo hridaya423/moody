@@ -1,6 +1,6 @@
 # Moody - Emotional Well-being Tracker
 
-Moody is a full-stack web application that helps users track and analyze their emotional well-being. Built with Next.js, Supabase, and OpenAI, it provides an intuitive interface for mood tracking and AI-powered insights.
+Moody is a full-stack web application that helps users track and analyze their emotional well-being. Built with Next.js, Tailwind CSS, Supabase, and OpenAI, it provides an intuitive interface for mood tracking and AI-powered insights.
 
 ![Moody Landing Page](https://cloud-qezh34qvk-hack-club-bot.vercel.app/0image.png)
 
@@ -26,9 +26,9 @@ Moody is a full-stack web application that helps users track and analyze their e
 Create a `.env.local` file in the root directory with the following variables:
 
 ```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-OPENAI_API_KEY=your_openai_api_key
+NEXT_PUBLIC_SUPABASE_URL='your_supabase_url'
+NEXT_PUBLIC_SUPABASE_ANON_KEY='your_supabase_anon_key'
+OPENAI_API_KEY='your_openai_api_key'
 ```
 
 ### Database Setup

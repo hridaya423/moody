@@ -22,7 +22,7 @@ const AuthPage = () => {
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `https://moody-nu.vercel.app/dashboard`,
+          redirectTo: ` `,
           queryParams: {
             access_type: 'offline',
             prompt: 'consent',
@@ -39,7 +39,6 @@ const AuthPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
-      {/* Decorative background elements */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-10 left-10 w-32 h-32 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
         <div className="absolute top-0 right-4 w-32 h-32 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
@@ -47,7 +46,6 @@ const AuthPage = () => {
       </div>
 
       <div className="relative z-10 max-w-md w-full mx-4">
-      
         <div className="mb-8 text-center">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white shadow-md mb-4">
             <Chrome className="w-8 h-8 text-blue-500" />
@@ -55,7 +53,6 @@ const AuthPage = () => {
           <h2 className="text-3xl font-bold text-gray-900">Welcome Back</h2>
           <p className="mt-2 text-gray-600">Please sign in to continue to the dashboard</p>
         </div>
-
         <div className="bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl p-8 transition-all duration-300 hover:shadow-2xl">
           <div className="space-y-6">
             <button
@@ -83,12 +80,14 @@ const AuthPage = () => {
               </div>
             </div>
 
+
             <div className="text-center">
               <a href="#" className="text-sm text-blue-600 hover:text-blue-800 transition-colors duration-300">
                 Contact support
               </a>
             </div>
           </div>
+        </div>
 
         <div className="mt-8 text-center text-sm text-gray-600">
           <p>By continuing, you agree to our</p>
